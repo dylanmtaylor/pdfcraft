@@ -53,8 +53,8 @@ fn a_newer_release_is_offered_for_download() {
     h.state_mut().execute("help.check_updates");
     settle(&mut h);
     h.get_by_label_contains("PdfCraft 99.0.0 is available");
-    h.get_by_label("Download");
-    h.get_by_label("Later").click();
+    h.get_by_label("DOWNLOAD");
+    h.get_by_label("LATER").click();
     h.run_steps(3);
     assert!(h.query_by_label_contains("is available").is_none(), "Later closes the dialog");
 }
