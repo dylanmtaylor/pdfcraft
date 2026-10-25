@@ -4008,6 +4008,7 @@ version = "0.14.0"
 dependencies = [
  "chrono",
  "craft-quit",
+ "craft-update",
  "eframe",
  "egui",
  "fmv-macos-events",

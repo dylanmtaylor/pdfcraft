@@ -69,3 +69,6 @@ uds_windows = "=1.2.1"
 [build-dependencies]
 # Icon + VERSIONINFO for pdfcraft.exe; build.rs only uses it when targeting Windows.
 winresource = "0.1"
+
+[target.'cfg(windows)'.dependencies]
+craft-update = { workspace = true }
